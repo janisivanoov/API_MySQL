@@ -1,0 +1,14 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace mysqltest.Models
+{
+    public class Club : BaseEntity
+    {
+        public int Id { get; set; }
+
+        [Required]
+        public string Name { get; set; }
+
+        public string Type { get; set; }
+    }
+}
